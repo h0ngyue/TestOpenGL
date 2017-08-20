@@ -21,6 +21,7 @@
 		5B5A36D21F49C54200473ADA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36D11F49C54200473ADA /* CoreVideo.framework */; };
 		5B5A36D41F49C54800473ADA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36D31F49C54800473ADA /* Cocoa.framework */; };
 		5B5A36D91F49C63000473ADA /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36D81F49C63000473ADA /* libglfw.3.2.dylib */; };
+		5B5A36DB1F49CF7E00473ADA /* vapp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A36DA1F49CF7E00473ADA /* vapp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +70,7 @@
 		5B5A36D61F49C60100473ADA /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
 		5B5A36D71F49C60100473ADA /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
 		5B5A36D81F49C63000473ADA /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = keypress/deps/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		5B5A36DA1F49CF7E00473ADA /* vapp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vapp.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				5B31621A1F49C17B00225957 /* vbm.cpp */,
 				5B31621B1F49C17B00225957 /* vdds.cpp */,
 				5B31621C1F49C17B00225957 /* vermilion.cpp */,
+				5B5A36DA1F49CF7E00473ADA /* vapp.cpp */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				5B31625D1F49C17B00225957 /* vbm.cpp in Sources */,
 				5B31625B1F49C17B00225957 /* loadtexture.cpp in Sources */,
+				5B5A36DB1F49CF7E00473ADA /* vapp.cpp in Sources */,
 				5B31625A1F49C17B00225957 /* LoadShaders.cpp in Sources */,
 				5B31625C1F49C17B00225957 /* targa.cpp in Sources */,
 				5B31621D1F49C17B00225957 /* gl3w.c in Sources */,

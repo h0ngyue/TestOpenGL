@@ -6,19 +6,14 @@
 
 class VermilionApplication
 {
-protected:
+public:
     inline VermilionApplication(void) {}
     virtual ~VermilionApplication(void) {}
 
     static VermilionApplication * s_app;
     GLFWwindow* m_pWindow;
 
-    
-#ifdef _WIN32
-    ULONGLONG       m_appStartTime;
-#else
     struct timeval  m_appStartTime;
-#endif
 
     static void window_size_callback(GLFWwindow* window, int width, int height);
     static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
@@ -55,6 +50,7 @@ public:
     virtual void OnKey(int key, int scancode, int action, int mods) { /* NOTHING */ }
     virtual void OnChar(unsigned int codepoint) { /* NOTHING */ }
 };
+
 
 #define BEGIN_APP_DECLARATION(appclass)                     \
 class appclass : public VermilionApplication                \
@@ -104,11 +100,8 @@ void APIENTRY VermilionApplication::DebugOutputCallback(GLenum source,         \
 #define DEBUG_OUTPUT_CALLBACK
 #endif
 
-#ifdef _WIN32
-#define MAIN_DECL int CALLBACK WinMain(_In_ HINSTANCE hInstance, _In_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nCmdShow)
-#else
 #define MAIN_DECL int main(int argc, char ** argv)
-#endif
+
 
 #define DEFINE_APP(appclass,title)                          \
 VermilionApplication * VermilionApplication::s_app;         \

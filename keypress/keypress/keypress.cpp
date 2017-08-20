@@ -27,7 +27,28 @@ BEGIN_APP_DECLARATION(KeyPressExample)
     void OnKey(int key, int scancode, int action, int mods);
 END_APP_DECLARATION()
 
-DEFINE_APP(KeyPressExample, "Key Press Example")
+//DEFINE_APP(KeyPressExample, "Key Press Example")
+
+void VermilionApplication::MainLoop(void)                   
+{                                                           
+    do                                                      
+    {
+        Display();                                          
+        glfwPollEvents();                                   
+    } while (!glfwWindowShouldClose(m_pWindow));            
+}                                                           
+
+int main(int argc, char ** argv)
+{                                                           
+    VermilionApplication * app = KeyPressExample::Create();        
+    
+    app->Initialize("Key Press Example");                                 
+    app->MainLoop();                                        
+    app->Finalize();                                        
+    
+    return 0;                                               
+}
+
 //----------------------------------------------------------------------------
 //
 // init

@@ -8,6 +8,7 @@
 #include <iostream>
 
 //#include <GL3/gl3w.h>
+#define GLEW_STATIC
 #include <GL/glew.h>
 #include "LoadShaders.h"
 
@@ -81,7 +82,7 @@ LoadShaders(ShaderInfo* shaders)
         GLint compiled;
         glGetShaderiv( shader, GL_COMPILE_STATUS, &compiled );
         if ( !compiled ) {
-#ifdef _DEBUG
+//#ifdef _DEBUG
             GLsizei len;
             glGetShaderiv( shader, GL_INFO_LOG_LENGTH, &len );
 
@@ -89,7 +90,7 @@ LoadShaders(ShaderInfo* shaders)
             glGetShaderInfoLog( shader, len, &len, log );
             std::cerr << "Shader compilation failed: " << log << std::endl;
             delete [] log;
-#endif /* DEBUG */
+//#endif /* DEBUG */
 
             return 0;
         }

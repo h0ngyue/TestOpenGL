@@ -21,6 +21,7 @@
 		5B5A36D91F49C63000473ADA /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36D81F49C63000473ADA /* libglfw.3.2.dylib */; };
 		5B5A36DB1F49CF7E00473ADA /* vapp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A36DA1F49CF7E00473ADA /* vapp.cpp */; };
 		5B5A36DD1F49D29800473ADA /* triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A36DC1F49D29800473ADA /* triangles.cpp */; };
+		5BD9E4CC1F49EB6E00CF2E65 /* triangles_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BD9E4CA1F49EB6E00CF2E65 /* triangles_2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,8 +49,6 @@
 		5B3162661F49C27E00225957 /* CheckError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckError.h; sourceTree = "<group>"; };
 		5B31626D1F49C27E00225957 /* LoadShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadShaders.h; sourceTree = "<group>"; };
 		5B31626E1F49C27E00225957 /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat.h; sourceTree = "<group>"; };
-		5B3162701F49C27E00225957 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
-		5B3162711F49C27E00225957 /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
 		5B3162721F49C27E00225957 /* vapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vapp.h; sourceTree = "<group>"; };
 		5B3162741F49C27E00225957 /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
 		5B3162751F49C27E00225957 /* vermilion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vermilion.h; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		5B5A36D81F49C63000473ADA /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = keypress/deps/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		5B5A36DA1F49CF7E00473ADA /* vapp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vapp.cpp; sourceTree = "<group>"; };
 		5B5A36DC1F49D29800473ADA /* triangles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangles.cpp; sourceTree = "<group>"; };
+		5BD9E4CA1F49EB6E00CF2E65 /* triangles_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangles_2.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +105,7 @@
 				5B3162651F49C27E00225957 /* include */,
 				5B31608C1F49C17A00225957 /* lib */,
 				5B3160761F49C0A500225957 /* keypress.cpp */,
+				5BD9E4CA1F49EB6E00CF2E65 /* triangles_2.cpp */,
 			);
 			path = keypress;
 			sourceTree = "<group>";
@@ -141,7 +142,6 @@
 				5B3162661F49C27E00225957 /* CheckError.h */,
 				5B31626D1F49C27E00225957 /* LoadShaders.h */,
 				5B31626E1F49C27E00225957 /* mat.h */,
-				5B31626F1F49C27E00225957 /* Shapes */,
 				5B3162721F49C27E00225957 /* vapp.h */,
 				5B3162741F49C27E00225957 /* vec.h */,
 				5B3162751F49C27E00225957 /* vermilion.h */,
@@ -150,15 +150,6 @@
 				5B3162781F49C27E00225957 /* vutils.h */,
 			);
 			path = include;
-			sourceTree = "<group>";
-		};
-		5B31626F1F49C27E00225957 /* Shapes */ = {
-			isa = PBXGroup;
-			children = (
-				5B3162701F49C27E00225957 /* Cube.h */,
-				5B3162711F49C27E00225957 /* Teapot.h */,
-			);
-			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD9E4CC1F49EB6E00CF2E65 /* triangles_2.cpp in Sources */,
 				5B5A36DD1F49D29800473ADA /* triangles.cpp in Sources */,
 				5B31625B1F49C17B00225957 /* loadtexture.cpp in Sources */,
 				5B5A36DB1F49CF7E00473ADA /* vapp.cpp in Sources */,

@@ -8,6 +8,7 @@
 #include <iostream>
 
 //#include <GL3/gl3w.h>
+#include <GL/glew.h>
 #include "LoadShaders.h"
 
 #ifdef __cplusplus

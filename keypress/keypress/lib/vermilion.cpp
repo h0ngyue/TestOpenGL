@@ -56,8 +56,9 @@ void VermilionApplication::Initialize(const char * title)
 
     glfwMakeContextCurrent(m_pWindow);
 
-    gl3wInit();
-
+//    gl3wInit();
+    glewInit();
+    
     Resize(800, 600);
 
 #ifdef _DEBUG

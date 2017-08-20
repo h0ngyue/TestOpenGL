@@ -20,9 +20,7 @@
 		5B5A36D41F49C54800473ADA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36D31F49C54800473ADA /* Cocoa.framework */; };
 		5B5A36D91F49C63000473ADA /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36D81F49C63000473ADA /* libglfw.3.2.dylib */; };
 		5B5A36DB1F49CF7E00473ADA /* vapp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A36DA1F49CF7E00473ADA /* vapp.cpp */; };
-		5B5A36DD1F49D29800473ADA /* 01-triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A36DC1F49D29800473ADA /* 01-triangles.cpp */; };
-		5B5A36E21F49D92700473ADA /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A36E11F49D92700473ADA /* gl3w.c */; };
-		5B5A36E61F49DBA100473ADA /* vbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B31621A1F49C17B00225957 /* vbm.cpp */; };
+		5B5A36DD1F49D29800473ADA /* triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A36DC1F49D29800473ADA /* triangles.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,7 +41,6 @@
 		5B3162171F49C17B00225957 /* LoadShaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadShaders.cpp; sourceTree = "<group>"; };
 		5B3162181F49C17B00225957 /* loadtexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = loadtexture.cpp; sourceTree = "<group>"; };
 		5B3162191F49C17B00225957 /* targa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = targa.cpp; sourceTree = "<group>"; };
-		5B31621A1F49C17B00225957 /* vbm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbm.cpp; sourceTree = "<group>"; };
 		5B31621B1F49C17B00225957 /* vdds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vdds.cpp; sourceTree = "<group>"; };
 		5B31621C1F49C17B00225957 /* vermilion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vermilion.cpp; sourceTree = "<group>"; };
 		5B3162611F49C21200225957 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -54,7 +51,6 @@
 		5B3162701F49C27E00225957 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
 		5B3162711F49C27E00225957 /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
 		5B3162721F49C27E00225957 /* vapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vapp.h; sourceTree = "<group>"; };
-		5B3162731F49C27E00225957 /* vbm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbm.h; sourceTree = "<group>"; };
 		5B3162741F49C27E00225957 /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
 		5B3162751F49C27E00225957 /* vermilion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vermilion.h; sourceTree = "<group>"; };
 		5B3162761F49C27E00225957 /* vgl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgl.h; sourceTree = "<group>"; };
@@ -63,16 +59,9 @@
 		5B5A36CF1F49C53C00473ADA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		5B5A36D11F49C54200473ADA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		5B5A36D31F49C54800473ADA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		5B5A36D61F49C60100473ADA /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
-		5B5A36D71F49C60100473ADA /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
 		5B5A36D81F49C63000473ADA /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = keypress/deps/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		5B5A36DA1F49CF7E00473ADA /* vapp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vapp.cpp; sourceTree = "<group>"; };
-		5B5A36DC1F49D29800473ADA /* 01-triangles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "01-triangles.cpp"; sourceTree = "<group>"; };
-		5B5A36DF1F49D8C700473ADA /* gl3w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3w.h; sourceTree = "<group>"; };
-		5B5A36E01F49D8C700473ADA /* glcorearb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glcorearb.h; sourceTree = "<group>"; };
-		5B5A36E11F49D92700473ADA /* gl3w.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl3w.c; sourceTree = "<group>"; };
-		5B5A36E41F49DA8800473ADA /* gl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3.h; sourceTree = "<group>"; };
-		5B5A36E51F49DA8800473ADA /* gl3w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3w.h; sourceTree = "<group>"; };
+		5B5A36DC1F49D29800473ADA /* triangles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangles.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +101,7 @@
 		5B31606E1F49BF9D00225957 /* keypress */ = {
 			isa = PBXGroup;
 			children = (
-				5B5A36DC1F49D29800473ADA /* 01-triangles.cpp */,
+				5B5A36DC1F49D29800473ADA /* triangles.cpp */,
 				5B3162651F49C27E00225957 /* include */,
 				5B31608C1F49C17A00225957 /* lib */,
 				5B3160761F49C0A500225957 /* keypress.cpp */,
@@ -123,11 +112,9 @@
 		5B31608C1F49C17A00225957 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				5B5A36E11F49D92700473ADA /* gl3w.c */,
 				5B3162171F49C17B00225957 /* LoadShaders.cpp */,
 				5B3162181F49C17B00225957 /* loadtexture.cpp */,
 				5B3162191F49C17B00225957 /* targa.cpp */,
-				5B31621A1F49C17B00225957 /* vbm.cpp */,
 				5B31621B1F49C17B00225957 /* vdds.cpp */,
 				5B31621C1F49C17B00225957 /* vermilion.cpp */,
 				5B5A36DA1F49CF7E00473ADA /* vapp.cpp */,
@@ -151,15 +138,11 @@
 		5B3162651F49C27E00225957 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				5B5A36E31F49DA8800473ADA /* GL3 */,
-				5B5A36DE1F49D8C700473ADA /* GL */,
-				5B5A36D51F49C60100473ADA /* GLFW */,
 				5B3162661F49C27E00225957 /* CheckError.h */,
 				5B31626D1F49C27E00225957 /* LoadShaders.h */,
 				5B31626E1F49C27E00225957 /* mat.h */,
 				5B31626F1F49C27E00225957 /* Shapes */,
 				5B3162721F49C27E00225957 /* vapp.h */,
-				5B3162731F49C27E00225957 /* vbm.h */,
 				5B3162741F49C27E00225957 /* vec.h */,
 				5B3162751F49C27E00225957 /* vermilion.h */,
 				5B3162761F49C27E00225957 /* vgl.h */,
@@ -176,33 +159,6 @@
 				5B3162711F49C27E00225957 /* Teapot.h */,
 			);
 			path = Shapes;
-			sourceTree = "<group>";
-		};
-		5B5A36D51F49C60100473ADA /* GLFW */ = {
-			isa = PBXGroup;
-			children = (
-				5B5A36D61F49C60100473ADA /* glfw3.h */,
-				5B5A36D71F49C60100473ADA /* glfw3native.h */,
-			);
-			path = GLFW;
-			sourceTree = "<group>";
-		};
-		5B5A36DE1F49D8C700473ADA /* GL */ = {
-			isa = PBXGroup;
-			children = (
-				5B5A36DF1F49D8C700473ADA /* gl3w.h */,
-				5B5A36E01F49D8C700473ADA /* glcorearb.h */,
-			);
-			path = GL;
-			sourceTree = "<group>";
-		};
-		5B5A36E31F49DA8800473ADA /* GL3 */ = {
-			isa = PBXGroup;
-			children = (
-				5B5A36E41F49DA8800473ADA /* gl3.h */,
-				5B5A36E51F49DA8800473ADA /* gl3w.h */,
-			);
-			path = GL3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5A36E61F49DBA100473ADA /* vbm.cpp in Sources */,
-				5B5A36E21F49D92700473ADA /* gl3w.c in Sources */,
-				5B5A36DD1F49D29800473ADA /* 01-triangles.cpp in Sources */,
+				5B5A36DD1F49D29800473ADA /* triangles.cpp in Sources */,
 				5B31625B1F49C17B00225957 /* loadtexture.cpp in Sources */,
 				5B5A36DB1F49CF7E00473ADA /* vapp.cpp in Sources */,
 				5B31625A1F49C17B00225957 /* LoadShaders.cpp in Sources */,
@@ -372,10 +326,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = N5V3TNEA4U;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/keypress/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/keypress/include",
+					/usr/local/Cellar/glew/2.0.0/include,
+					/usr/local/Cellar/glfw/3.2.1/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/keypress/deps",
+					/usr/local/Cellar/glew/2.0.0/lib,
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lGLFW",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -385,10 +348,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = N5V3TNEA4U;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/keypress/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/keypress/include",
+					/usr/local/Cellar/glew/2.0.0/include,
+					/usr/local/Cellar/glfw/3.2.1/include,
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/keypress/deps",
+					/usr/local/Cellar/glew/2.0.0/lib,
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lGLFW",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

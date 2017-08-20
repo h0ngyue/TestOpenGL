@@ -24,6 +24,9 @@ const GLuint  NumVertices = 6;
 void
 init( void )
 {
+    
+    void *test = (void* )glGenVertexArrays;
+
     glGenVertexArrays( NumVAOs, VAOs );
     glBindVertexArray( VAOs[Triangles] );
 
@@ -33,8 +36,12 @@ init( void )
     };
 
     int t = NumBuffers;
-    gl3wCreateBuffers( NumBuffers, Buffers );
-    glBufferStorage( GL_ARRAY_BUFFER, sizeof(vertices), vertices, 0);
+//    gl3wCreateBuffers( NumBuffers, Buffers );
+
+    glGenBuffers(NumBuffers, Buffers);
+    
+//    glCreateBuffers(NumBuffers, Buffers);
+//    glBufferStorage( GL_ARRAY_BUFFER, sizeof(vertices), vertices, 0);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, 0);
 
     ShaderInfo  shaders[] =
@@ -73,7 +80,8 @@ display( void )
 // main
 //
 
-
+#include <assert.h>
+#include <stdio.h>
 int
 main( int argc, char** argv )
 {
@@ -82,7 +90,12 @@ main( int argc, char** argv )
     GLFWwindow* window = glfwCreateWindow(800, 600, "Triangles", NULL, NULL);
 
     glfwMakeContextCurrent(window);
-    int version = gl3wInit();
+//    int version = gl3wInit();
+    glewExperimental = GL_TRUE;
+    GLenum ret = glewInit();
+    assert (ret ==GLEW_OK);
+   
+    printf("Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
 
     init();
 

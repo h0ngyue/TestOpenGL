@@ -24,8 +24,9 @@ void init(void) {
         {  0.90,  0.90 },
         { -0.85,  0.90 }
     };
-    glGenBuffers(NumBuffers, Buffers); glBindBuffer(GL_ARRAY_BUFFER, Buffers[ArrayBuffer]); glBufferData(GL_ARRAY_BUFFER, sizeof(vertices),
-                                                                                                         vertices, GL_STATIC_DRAW);
+    glGenBuffers(NumBuffers, Buffers);
+    glBindBuffer(GL_ARRAY_BUFFER, Buffers[ArrayBuffer]);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     ShaderInfo  shaders[] = {
         { GL_VERTEX_SHADER, "triangles.vert" },
         { GL_FRAGMENT_SHADER, "triangles.frag" },

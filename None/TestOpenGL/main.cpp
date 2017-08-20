@@ -5,7 +5,7 @@ using namespace std;
 #include <OpenGL/OpenGL.h>
 #include <OpenGL/gltypes.h>
 #include <OpenGL/gl3.h>
-#include <GLUT/GLUT.h>
+#include <GLUT/glut.h>
 //#include "LoadShaders.h"
 enum VAO_IDs { Triangles, NumVAOs };
 enum Buffer_IDs { ArrayBuffer, NumBuffers }; enum Attrib_IDs { vPosition = 0 };

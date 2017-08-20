@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B3160771F49C0A500225957 /* keypress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3160761F49C0A500225957 /* keypress.cpp */; };
+		5B31621D1F49C17B00225957 /* gl3w.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B31608D1F49C17A00225957 /* gl3w.c */; };
+		5B31625A1F49C17B00225957 /* LoadShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3162171F49C17B00225957 /* LoadShaders.cpp */; };
+		5B31625B1F49C17B00225957 /* loadtexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3162181F49C17B00225957 /* loadtexture.cpp */; };
+		5B31625C1F49C17B00225957 /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3162191F49C17B00225957 /* targa.cpp */; };
+		5B31625D1F49C17B00225957 /* vbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B31621A1F49C17B00225957 /* vbm.cpp */; };
+		5B31625E1F49C17B00225957 /* vdds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B31621B1F49C17B00225957 /* vdds.cpp */; };
+		5B31625F1F49C17B00225957 /* vermilion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B31621C1F49C17B00225957 /* vermilion.cpp */; };
+		5B3162621F49C21200225957 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3162611F49C21200225957 /* OpenGL.framework */; };
+		5B3162641F49C21700225957 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3162631F49C21700225957 /* GLUT.framework */; };
+		5B5A36D01F49C53C00473ADA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36CF1F49C53C00473ADA /* IOKit.framework */; };
+		5B5A36D21F49C54200473ADA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36D11F49C54200473ADA /* CoreVideo.framework */; };
+		5B5A36D41F49C54800473ADA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36D31F49C54800473ADA /* Cocoa.framework */; };
+		5B5A36D91F49C63000473ADA /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5A36D81F49C63000473ADA /* libglfw.3.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B31606A1F49BF9D00225957 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B31606C1F49BF9D00225957 /* keypress */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = keypress; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3160761F49C0A500225957 /* keypress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = keypress.cpp; sourceTree = "<group>"; };
+		5B31608D1F49C17A00225957 /* gl3w.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gl3w.c; sourceTree = "<group>"; };
+		5B3162171F49C17B00225957 /* LoadShaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadShaders.cpp; sourceTree = "<group>"; };
+		5B3162181F49C17B00225957 /* loadtexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = loadtexture.cpp; sourceTree = "<group>"; };
+		5B3162191F49C17B00225957 /* targa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = targa.cpp; sourceTree = "<group>"; };
+		5B31621A1F49C17B00225957 /* vbm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbm.cpp; sourceTree = "<group>"; };
+		5B31621B1F49C17B00225957 /* vdds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vdds.cpp; sourceTree = "<group>"; };
+		5B31621C1F49C17B00225957 /* vermilion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vermilion.cpp; sourceTree = "<group>"; };
+		5B3162611F49C21200225957 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		5B3162631F49C21700225957 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		5B3162661F49C27E00225957 /* CheckError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckError.h; sourceTree = "<group>"; };
+		5B3162681F49C27E00225957 /* glcorearb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glcorearb.h; sourceTree = "<group>"; };
+		5B3162691F49C27E00225957 /* glext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glext.h; sourceTree = "<group>"; };
+		5B31626B1F49C27E00225957 /* gl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3.h; sourceTree = "<group>"; };
+		5B31626C1F49C27E00225957 /* gl3w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gl3w.h; sourceTree = "<group>"; };
+		5B31626D1F49C27E00225957 /* LoadShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadShaders.h; sourceTree = "<group>"; };
+		5B31626E1F49C27E00225957 /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat.h; sourceTree = "<group>"; };
+		5B3162701F49C27E00225957 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		5B3162711F49C27E00225957 /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
+		5B3162721F49C27E00225957 /* vapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vapp.h; sourceTree = "<group>"; };
+		5B3162731F49C27E00225957 /* vbm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbm.h; sourceTree = "<group>"; };
+		5B3162741F49C27E00225957 /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
+		5B3162751F49C27E00225957 /* vermilion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vermilion.h; sourceTree = "<group>"; };
+		5B3162761F49C27E00225957 /* vgl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgl.h; sourceTree = "<group>"; };
+		5B3162771F49C27E00225957 /* vmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vmath.h; sourceTree = "<group>"; };
+		5B3162781F49C27E00225957 /* vutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vutils.h; sourceTree = "<group>"; };
+		5B5A36CF1F49C53C00473ADA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		5B5A36D11F49C54200473ADA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5B5A36D31F49C54800473ADA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5B5A36D61F49C60100473ADA /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
+		5B5A36D71F49C60100473ADA /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
+		5B5A36D81F49C63000473ADA /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = keypress/deps/libglfw.3.2.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B3160691F49BF9D00225957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5A36D41F49C54800473ADA /* Cocoa.framework in Frameworks */,
+				5B5A36D91F49C63000473ADA /* libglfw.3.2.dylib in Frameworks */,
+				5B5A36D21F49C54200473ADA /* CoreVideo.framework in Frameworks */,
+				5B5A36D01F49C53C00473ADA /* IOKit.framework in Frameworks */,
+				5B3162641F49C21700225957 /* GLUT.framework in Frameworks */,
+				5B3162621F49C21200225957 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B3160631F49BF9D00225957 = {
+			isa = PBXGroup;
+			children = (
+				5B31606E1F49BF9D00225957 /* keypress */,
+				5B31606D1F49BF9D00225957 /* Products */,
+				5B3162601F49C21200225957 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B31606D1F49BF9D00225957 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B31606C1F49BF9D00225957 /* keypress */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B31606E1F49BF9D00225957 /* keypress */ = {
+			isa = PBXGroup;
+			children = (
+				5B3162651F49C27E00225957 /* include */,
+				5B31608C1F49C17A00225957 /* lib */,
+				5B3160761F49C0A500225957 /* keypress.cpp */,
+			);
+			path = keypress;
+			sourceTree = "<group>";
+		};
+		5B31608C1F49C17A00225957 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				5B31608D1F49C17A00225957 /* gl3w.c */,
+				5B3162171F49C17B00225957 /* LoadShaders.cpp */,
+				5B3162181F49C17B00225957 /* loadtexture.cpp */,
+				5B3162191F49C17B00225957 /* targa.cpp */,
+				5B31621A1F49C17B00225957 /* vbm.cpp */,
+				5B31621B1F49C17B00225957 /* vdds.cpp */,
+				5B31621C1F49C17B00225957 /* vermilion.cpp */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		5B3162601F49C21200225957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B5A36D81F49C63000473ADA /* libglfw.3.2.dylib */,
+				5B5A36D31F49C54800473ADA /* Cocoa.framework */,
+				5B5A36D11F49C54200473ADA /* CoreVideo.framework */,
+				5B5A36CF1F49C53C00473ADA /* IOKit.framework */,
+				5B3162631F49C21700225957 /* GLUT.framework */,
+				5B3162611F49C21200225957 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B3162651F49C27E00225957 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5B5A36D51F49C60100473ADA /* GLFW */,
+				5B3162661F49C27E00225957 /* CheckError.h */,
+				5B3162671F49C27E00225957 /* GL */,
+				5B31626A1F49C27E00225957 /* GL3 */,
+				5B31626D1F49C27E00225957 /* LoadShaders.h */,
+				5B31626E1F49C27E00225957 /* mat.h */,
+				5B31626F1F49C27E00225957 /* Shapes */,
+				5B3162721F49C27E00225957 /* vapp.h */,
+				5B3162731F49C27E00225957 /* vbm.h */,
+				5B3162741F49C27E00225957 /* vec.h */,
+				5B3162751F49C27E00225957 /* vermilion.h */,
+				5B3162761F49C27E00225957 /* vgl.h */,
+				5B3162771F49C27E00225957 /* vmath.h */,
+				5B3162781F49C27E00225957 /* vutils.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5B3162671F49C27E00225957 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				5B3162681F49C27E00225957 /* glcorearb.h */,
+				5B3162691F49C27E00225957 /* glext.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		5B31626A1F49C27E00225957 /* GL3 */ = {
+			isa = PBXGroup;
+			children = (
+				5B31626B1F49C27E00225957 /* gl3.h */,
+				5B31626C1F49C27E00225957 /* gl3w.h */,
+			);
+			path = GL3;
+			sourceTree = "<group>";
+		};
+		5B31626F1F49C27E00225957 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				5B3162701F49C27E00225957 /* Cube.h */,
+				5B3162711F49C27E00225957 /* Teapot.h */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		5B5A36D51F49C60100473ADA /* GLFW */ = {
+			isa = PBXGroup;
+			children = (
+				5B5A36D61F49C60100473ADA /* glfw3.h */,
+				5B5A36D71F49C60100473ADA /* glfw3native.h */,
+			);
+			path = GLFW;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B31606B1F49BF9D00225957 /* keypress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B3160731F49BF9D00225957 /* Build configuration list for PBXNativeTarget "keypress" */;
+			buildPhases = (
+				5B3160681F49BF9D00225957 /* Sources */,
+				5B3160691F49BF9D00225957 /* Frameworks */,
+				5B31606A1F49BF9D00225957 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = keypress;
+			productName = keypress;
+			productReference = 5B31606C1F49BF9D00225957 /* keypress */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B3160641F49BF9D00225957 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = kikyo;
+				TargetAttributes = {
+					5B31606B1F49BF9D00225957 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = N5V3TNEA4U;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5B3160671F49BF9D00225957 /* Build configuration list for PBXProject "keypress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B3160631F49BF9D00225957;
+			productRefGroup = 5B31606D1F49BF9D00225957 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B31606B1F49BF9D00225957 /* keypress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B3160681F49BF9D00225957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B31625D1F49C17B00225957 /* vbm.cpp in Sources */,
+				5B31625B1F49C17B00225957 /* loadtexture.cpp in Sources */,
+				5B31625A1F49C17B00225957 /* LoadShaders.cpp in Sources */,
+				5B31625C1F49C17B00225957 /* targa.cpp in Sources */,
+				5B31621D1F49C17B00225957 /* gl3w.c in Sources */,
+				5B31625E1F49C17B00225957 /* vdds.cpp in Sources */,
+				5B31625F1F49C17B00225957 /* vermilion.cpp in Sources */,
+				5B3160771F49C0A500225957 /* keypress.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5B3160711F49BF9D00225957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5B3160721F49BF9D00225957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5B3160741F49BF9D00225957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = N5V3TNEA4U;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/keypress/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/keypress/deps",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5B3160751F49BF9D00225957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = N5V3TNEA4U;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/keypress/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/keypress/deps",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B3160671F49BF9D00225957 /* Build configuration list for PBXProject "keypress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B3160711F49BF9D00225957 /* Debug */,
+				5B3160721F49BF9D00225957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B3160731F49BF9D00225957 /* Build configuration list for PBXNativeTarget "keypress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B3160741F49BF9D00225957 /* Debug */,
+				5B3160751F49BF9D00225957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B3160641F49BF9D00225957 /* Project object */;
+}
